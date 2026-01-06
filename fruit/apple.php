@@ -7,7 +7,7 @@ class Apple extends Fruit{
         $color = $colors[rand(0,1)];
 
         parent::__construct(
-            $color = "red",
+            $color = $color,
             $weight_g = $weight_g,
             $condition = $condition,
             $price_per_kg = 40);

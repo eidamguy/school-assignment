@@ -14,6 +14,14 @@ class Fruit{
         $this->condition = $this->condition->age();
     }
 
+    public function echo_self(){
+        echo("type: ".get_class($this)."<br>");
+        echo("color: ".$this->color."<br>");
+        echo("condition: ".$this->condition->to_string($this->condition)."<br>");
+        echo("weight: ".$this->weight_g."g<br>");
+        echo("value: ".$this->price." Kč<br><br>");
+    }
+
     public function update_price(){
         $cond_multiplyer = $this->condition->get_multiplyer($this->condition);
         $weight_multiplyer = $this->price_per_kg * $this->weight_g/1000;

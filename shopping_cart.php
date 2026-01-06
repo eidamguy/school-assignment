@@ -28,6 +28,11 @@ class Shopping_cart {
         $this->price = $total_price;
     }
 
+    public function echo_contents(){
+        echo("shopping cart contents <br><br>");
+        foreach ($this->contents as $obj) {
+            $obj->echo_self();}
+    }
 }
 
 

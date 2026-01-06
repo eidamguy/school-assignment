@@ -28,6 +28,7 @@ function main(){
 
     echo('total weight of shopping cart = '.$cart->weight_g.' grams <br><br>');
     echo('total price of fruits = '.$cart->price.' Kč <br><br>');
+    $cart->echo_contents();
 }
 
 main();

@@ -24,6 +24,14 @@ enum Fruit_condition{
             Fruit_condition::ROTTEN   => 0.1};
 
         return $return;}
+
+    public function to_string($condition){
+        return match($condition){
+            Fruit_condition::UNRIPE => "unripe",
+            Fruit_condition::RIPE => "ripe",
+            Fruit_condition::OVERRIPE => "overripe",
+            Fruit_condition::ROTTEN => "rotten"};
+    }
 }
 
 ?>
